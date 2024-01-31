@@ -13,8 +13,8 @@ console.log(process.env);
 // Use dev database, testing database, or via env var, production database
 function getDatabaseUri() {
     return process.env.NODE_ENV === "test"
-        ? "postgresql:///jobly_test"
-        : process.env.DATABASE_URL || "postgresql:///jobly";
+        ? "postgresql:///workout_generator_test"
+        : process.env.DATABASE_URL || "postgresql:///workout_generator";
 }
 
 // Speed up bcrypt during tests, since the algorithm safety isn't being tested
